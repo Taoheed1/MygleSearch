@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Image Search</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </head>
+    <body>
+        <nav>
+            <div id="navbar">
+                <ul>
+                    <li><a href= "index.html">Search</a></li>
+                    <li><a href= "advanced_search.html">Advanced Search</a></li>   
+                </ul>
+            </div>
+        </nav>
+        
+        <main>
+            <div class="container">
+                <div class="center">
+                    <form action="https://google.com/search" class="search">
+                        <a href="https://www.festisite.com/logo/google/"><img src="festisite_google.png" alt="mygle_logo"></a>
+                        <label for="q"></label>
+                        
+                        <input type="text" name="q" id="search_bar" aria-required="true">
+                        <input name="tbm" value="isch" id="tbm" hidden/>
+                        <input type="text" name="sclient" value="img" id="sclient" hidden>
+                        <br><br>
+                        <input type="submit" value="Google Search" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

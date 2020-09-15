@@ -1,0 +1,141 @@
+img {
+    margin: 0;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: red;;
+    width: 100%;
+    z-index: -1;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "head head"
+    "main main";
+}
+
+header {
+    grid-area: head;
+    h3 {
+        color: red;
+        padding: 10px;
+        text-align: left;
+        margin-left: 30px;
+    }
+    hr {
+        height: 1px;
+        color: gray;
+    }
+}
+
+nav {
+    grid-area: nav;
+    
+}
+
+main {
+    grid-area: main;
+    padding-top: 30px;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer   ;
+}
+
+//Center the search bar
+.container {
+    height: 600px;
+    position: relative;
+    display: block;
+    padding: 20px;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    input[type=submit] {
+        background-color:transparentize($color: gray, $amount: 0.9);
+        border: none;
+        border-radius: 4px;
+        height: 32px;
+        text-align: center;
+        color: transparentize($color: black, $amount: 0.4);
+        display: inline;
+        width: 200px ;
+        margin: 0 auto  ;
+        :hover {
+            color: black;
+            background-color: gray;
+        }
+    }
+}
+
+//Customize look of search bar
+#search_bar {
+    background-color: transparent;
+    border-style: inset;
+    height: 34px;
+    width: 400px;
+    border-radius: 25px;
+    border: 2px solid black;
+    :hover(.active) {
+        background-color: gray;
+    }
+}
+
+//Customise hyperlinks to act as navigation bar
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    li {
+        float: right;
+        margin: 0 5px;    
+        a {
+            padding: 0.5em;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            :hover:any-link {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+    
+#advanced-search {
+    legend {
+        padding-bottom: 30px;
+    }
+
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: left;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    input {
+        flex: 0 0 400px; 
+        margin-left: 10px;
+        float: right;
+    }
+    input[type=submit] {
+        background-color: rgb(4, 86, 236);
+        color: white;
+        height: 35px;
+        padding: 10px;
+        float: right;
+    }
+}
